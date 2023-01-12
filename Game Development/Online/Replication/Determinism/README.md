@@ -12,5 +12,8 @@
 # [Deterministic vs. Replicated AI: Building the Battlefield of For Honor - Frederic Doll and Xavier Guilbeault - GDC 2017](https://www.youtube.com/watch?v=4Z0aUEBp_Os&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
 ## Topics covered include: Katana's input receiving Tool for local/remote Players and also for AI Actors (via Behavior Trees), Peer to Peer Network model, Deterministic simulation with timestamp inputs and rewinding, Actor History Buffers, Editor Rewind & Replay, Deterministic AI (time slicing, simplified physics, NavFlows vs NavMesh, Flocking Group Behavior) and Replicated AI.  
 
-# ['Overwatch' Gameplay Architecture and Netcode - GDC 2017](https://www.gdcvault.com/play/1024001/-Overwatch-Gameplay-Architecture-and)
+# [Replay Technology in Overwatch: Kill Cam, Gameplay, and Highlights - Philip Orwig - GDC 2017](https://www.youtube.com/watch?v=W4oZq4tn57w&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## Describes Overwatch's Replay System and how it relates to the game's Network Synchronization model. Other topics include: Brief review of Network Synchronization models, how to build a Replay system on each of them, more details on the State Based Network Synchronization model used by Overwatch (Deltas, server adaptiveness to client Bandwidth, Packet Loss, custom UDP protocol, Join in Progress, etc.), the Synchronization API, etc.
 
+# ['Overwatch' Gameplay Architecture and Netcode - Timothy Ford - GDC 2017](https://www.gdcvault.com/play/1024001/-Overwatch-Gameplay-Architecture-and)
+## Overwatch focuses on responsiveness and accuracy and therefore a Deterministic simulation is a great fit. This talks describes the game's Deterministic foundation (non-strict in comparison to a Lockstep network model), as well as other topics such as the Entity Component System, Input Synchronization, Synchronized clock or Predicting and Acknowledging Hit Registration.
