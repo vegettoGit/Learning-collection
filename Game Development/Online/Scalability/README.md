@@ -1,6 +1,8 @@
-# ['Rocket League': Scaling for Free to Play - 2021 Online Game Technology Summit](https://www.youtube.com/watch?v=W52Lm505300&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+# [Quasar, Brightest in the Galaxy: Expanding 'EVE Online's' Server Potential with gRPC - Nicholas Herring - 2022 Online Game Technology Summit](https://www.youtube.com/watch?v=RR0YTEEMLFg&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## The talk goes through Eve Online's context (Single shard where everybody is connected, largest PvP battle ever in a multiplayer game) and the programming languages it uses (C++ for simulation engine, middlewares; SQL for world persistence, gameplay logic; Python for rules engine, services, protocol for network layer; most of the authored universe data in YAML).
+## It then talks about its topology evolution: From a single datacenter using a single MSSQL, SOLs worker nodes for services load balancing, Proxies handling client connections and the Carbon IO network protocol; to a Monolith Services model, to a Web 2.0 model with Auth Services, to using a RESTful model and so on. This led overtime to various improvement needs in areas of Performance, Maintenance and Deployment, which kicked off Quasar's idea.
+## Quasar uses the Eve Swagger Interface, Kubernetes/Cloud (easier to have redundancy, restart services with no downtime, etc.), Message Bus (to communicate with the primary cluster), the Protobuf schema (for domain boundaries), the gRPC protocol, Domain Services (isolated in a Cloud provider), Service Gateway (CCP networks, legacy services) and Public Gateway (client connections). 
+
+# ['Rocket League': Scaling for Free to Play - Matthew Sanders - 2021 Online Game Technology Summit](https://www.youtube.com/watch?v=W52Lm505300&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
 ## Topics include: Load testing, Matchmaking, Redis Migration, MySQL improvements, etc.
-
-
-
 
