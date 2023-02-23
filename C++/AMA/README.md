@@ -7,4 +7,5 @@
 # [AMA with Sean Parent at Meeting C++ 2022](https://www.youtube.com/watch?v=8SF-UR8AuPI&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
 
 # [Bjarne Stroustrup: C++ | Lex Fridman Podcast #48 | 2019](https://www.youtube.com/watch?v=uTxRF5ag27A&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## Topics include: How using C++ as an Object Oriented Programming Language is really optional, Static analysis, Efficiency & Safety, Performance & Abstraction, Inheritance, Concepts, Standarization, Constructors & Destructors (RAII), etc.
 
