@@ -1,9 +1,9 @@
 # [Maximizing Your Game's Performance in Unreal Engine - Ari Arnbjörnsson - Unreal Fest 2022](https://www.youtube.com/watch?v=GuIav71867E&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
 ## Topics include: 
 ### - Profiling in general:
-Frame budget, When do I optimize, Practical Optimization
+Frame budget, When do I optimize and Practical Optimization.
 ### - Profiling in Unreal Engine:
-Unreal Insights, ProfileGPU
+Unreal Insights and ProfileGPU.
 ### - Practical examples:
 Low Editor Framerate, Tiny Actor and Huge Hitch, Foggy Horror and Memory Leak.
 
