@@ -3,7 +3,7 @@
 ### - Built-in Profiling Tools and Commands:
 Unreal Insights: Provides detailed insights into the frame timings: CPU/GPU, Memory, File Loading and Threading. Bookmarks are used for context and transitions (example: level streaming start/complete). <br>
 Memreport: Runs a number of commands for memory profiling. How much memory is certain category (example: objects of type Animation Sequence) using? Is any object larger than expected? Use it on Package games as opposed to the Editor. <br>
-DUMPTICKS: Output all Actor and Component Ticks. <br>
+DUMPTICKS: Output all Actor and Component Ticks. <br><br>
 RENDERDOC: Shows up Occlusion results. It allows us to easily find wasteful queries on tiny/far objects. <br>
 FreezeRendering: Fly with DebugCamera. Verify Occlusion is working as expected. <br>
 Use the Animation Compression Library (ACL). <br>
@@ -20,7 +20,6 @@ Animation Fast Path: Move Computations out of AnimGraph into EventGraph. Update 
 Shadow Proxies: Single low-poly silhouette mesh (RenderMainPass=False), Bespoke mesh or using built-in Mesh Tools (Merge Actors). <br> 
 ### - Significance Manager:
 Scale down fidelity based on game specific logic (example: distance to). It scales down based on the "significant value". It reduces / culls tick rates, queries, animation updates, audio / particles update rate, etc. <br>
-### - "Did you know?":
 
 # [Maximizing Your Game's Performance in Unreal Engine - Ari Arnbjörnsson - Unreal Fest 2022](https://www.youtube.com/watch?v=GuIav71867E&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
 ## Topics include: 
