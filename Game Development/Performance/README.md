@@ -17,9 +17,8 @@ Oclussion Culling: HLOD can greatly reduce occlusion cost. <br><br>
 Distance Culling: Set a Max/Min Draw Distance on PrimitiveComponent. Distance Cull Volume maps "Size" with "CullDistance". <br><br>
 Level Streaming: Using Streaming Volumes vs Manual Load/Unload. It can be Camera Location based. Use "Loadtimes.dumpreport" to show how long specific assets took to load. It reduces the initial level load time. <br><br>
 Animation Fast Path: Move Computations out of AnimGraph into EventGraph. Update Rate Optimization (URO) for distant SkelMeshes. <br><br>
-Shadow Proxies: Single low-poly silhouette mesh (RenderMainPass=False), Bespoke mesh or using built-in Mesh Tools (Merge Actors). <br> 
-### - Significance Manager:
-Scale down fidelity based on game specific logic (example: distance to). It scales down based on the "significant value". It reduces / culls tick rates, queries, animation updates, audio / particles update rate, etc. <br>
+Shadow Proxies: Single low-poly silhouette mesh (RenderMainPass=False); Bespoke mesh or using built-in Mesh Tools (Merge Actors). <br><br>
+Significance Manager: Scale down fidelity based on game specific logic (example: distance to). It scales down based on the "significant value". It reduces / culls tick rates, queries, animation updates, audio / particles update rate, etc. <br>
 
 # [Maximizing Your Game's Performance in Unreal Engine - Ari Arnbjörnsson - Unreal Fest 2022](https://www.youtube.com/watch?v=GuIav71867E&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
 ## Topics include: 
