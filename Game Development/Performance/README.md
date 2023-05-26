@@ -1,8 +1,8 @@
 # [Unreal Engine Game Optimization on a Budget - Tom Looman - JetBrains GameDev Day Online 2022](https://www.youtube.com/watch?v=G51QWcitCII&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
 ## Topics include: 
 ### - Built-in Profiling Tools and Commands:
-Unreal Insights: Provides detailed insights into the frame timings: CPU/GPU, Memory, File Loading and Threading. Bookmarks are used for context and transitions (example: level streaming start/complete). <br><br>
-Memreport: Runs a number of commands for memory profiling. How much memory is certain category (example: objects of type Animation Sequence) using? Is any object larger than expected? Use it on Package games as opposed to the Editor. <br><br>
+* Unreal Insights: Provides detailed insights into the frame timings: CPU/GPU, Memory, File Loading and Threading. Bookmarks are used for context and transitions (example: level streaming start/complete). <br><br>
+* Memreport: Runs a number of commands for memory profiling. How much memory is certain category (example: objects of type Animation Sequence) using? Is any object larger than expected? Use it on Package games as opposed to the Editor. <br><br>
 DUMPTICKS: Output all Actor and Component Ticks. <br><br>
 RENDERDOC: Shows up Occlusion results. It allows us to easily find wasteful queries on tiny/far objects. <br><br>
 FreezeRendering: Fly with DebugCamera. Verify Occlusion is working as expected. <br><br>
