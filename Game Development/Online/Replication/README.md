@@ -16,7 +16,7 @@
 * Bandwidth usage.
 * Seamlessness.
 
-## [Developer Update | High Bandwidth Update | Overwatch - Tim Ford & Philip Orwig](https://www.youtube.com/watch?v=EqtNUFxgm38&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [High Bandwidth Update | Overwatch - Tim Ford & Philip Orwig - Developer Update 2016](https://www.youtube.com/watch?v=EqtNUFxgm38&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
 ### Brief description on Overwatch's adaptive bandwidth management for a better player experience.
 * Players receive data from the server more often when in the High Bandwidth mode.
 * Players send input data to the server more often when in the High Bandwidth mode.
