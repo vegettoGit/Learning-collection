@@ -33,7 +33,8 @@
 ## [I Shot You First: Networking the Gameplay of Halo: Reach - David Aldridge - GDC 2011](https://www.youtube.com/watch?v=h47zZrqjgLc&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
 ### The talk is about Halo Reach's multiplayer competitive experience. Topics covered are: 
 * Basic concepts (Replication, Prediction, Authority)
-* The architecture for scalable gameplay networking in PvP (Network stack; protocols such as State data, Events and Control data; Prioritization, Relevance, Update period)
+* The architecture for scalable gameplay networking in PvP
+ * Network stack; protocols such as State data, Events and Control data; Prioritization, Relevance, Update period)
 * Measuring and optimizing networking (Tooling: Profilers to measure bandwidth and prioritization, Playback of gameplay sessions and  Playtests simulating adverse network conditions; Bandwidth optimizations)
 * Designing solid networking for game mechanics (4 rules of gameplay networking; examples: throwing grenades, armor lock, assassination).
 ### Other notes: 
