@@ -12,11 +12,11 @@ SYNTHBENCHMARK: Run CPU/GPU benchmark and apply Scalability Settings. <br><br>
 SizeMap: Find unexpected references and bloated content. <br><br>
 Others: Profile GPU, stat unitgraph, stat detailed. <br>
 ### - Easy optimization opportunities:
-"Collision Enabled" (Physics + Query) might be set to on by default, when we just need a Query (example: unreachable objects or objects we cannot interact with). <br>
-Oclussion Culling: HLOD can greatly reduce occlusion cost. <br>
-Distance Culling: Set a Max/Min Draw Distance on PrimitiveComponent. Distance Cull Volume maps "Size" with "CullDistance". <br>
-Level Streaming: Using Streaming Volumes vs Manual Load/Unload. It can be Camera Location based. Use "Loadtimes.dumpreport" to show how long specific assets took to load. It reduces the initial level load time. <br>
-Animation Fast Path: Move Computations out of AnimGraph into EventGraph. Update Rate Optimization (URO) for distant SkelMeshes. <br> 
+"Collision Enabled" (Physics + Query) might be set to on by default, when we just need a Query (example: unreachable objects or objects we cannot interact with). <br><br>
+Oclussion Culling: HLOD can greatly reduce occlusion cost. <br><br>
+Distance Culling: Set a Max/Min Draw Distance on PrimitiveComponent. Distance Cull Volume maps "Size" with "CullDistance". <br><br>
+Level Streaming: Using Streaming Volumes vs Manual Load/Unload. It can be Camera Location based. Use "Loadtimes.dumpreport" to show how long specific assets took to load. It reduces the initial level load time. <br><br>
+Animation Fast Path: Move Computations out of AnimGraph into EventGraph. Update Rate Optimization (URO) for distant SkelMeshes. <br><br>
 Shadow Proxies: Single low-poly silhouette mesh (RenderMainPass=False), Bespoke mesh or using built-in Mesh Tools (Merge Actors). <br> 
 ### - Significance Manager:
 Scale down fidelity based on game specific logic (example: distance to). It scales down based on the "significant value". It reduces / culls tick rates, queries, animation updates, audio / particles update rate, etc. <br>
