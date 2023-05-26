@@ -1,5 +1,5 @@
 # [Networking Challenges in Gaming - Philip Orwig & Malachi Middlebrook - Networking @Scale 2018](https://www.facebook.com/atscaleevents/videos/networking-scale-2018-networking-challenges-in-gaming/2090071161265977/)
-## Topics covered:
+### Topics covered:
 * A high level overview of various Replication models such as Deterministic lockstep, Snapshot interpolation, Incremental State Changes, etc.
 * Usage of unreliable datagrams (UDP).
 * Artificial adaptive interpolation delay.
@@ -9,10 +9,15 @@
 * Data centers connectivity.
 
 # [Networking Scripted Weapons and Abilities in 'Overwatch' - Dan Reed - GDC 2017](https://www.gdcvault.com/play/1024041/Networking-Scripted-Weapons-and-Abilities)
-## Includes topics such as script behavior prediction and replication, networked gameplay responsiveness, security, bandwidth usage and seamlessness.
+### Includes topics such as: 
+* Script behavior prediction and replication.
+* Networked gameplay responsiveness. 
+* Security.
+* Bandwidth usage.
+* Seamlessness.
 
 # [Developer Update | High Bandwidth Update | Overwatch - Tim Ford & Philip Orwig](https://www.youtube.com/watch?v=EqtNUFxgm38&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
-## Brief description on Overwatch's adaptive bandwidth management for a better player experience.
+### Brief description on Overwatch's adaptive bandwidth management for a better player experience.
 * Players receive data from the server more often when in the High Bandwidth mode.
 * Players send input data to the server more often when in the High Bandwidth mode.
 * The interpolation delay can be decreased when in the High Bandwidth mode.
