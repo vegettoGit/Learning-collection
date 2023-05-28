@@ -31,4 +31,7 @@
   * ISO Standard: Executors, Pattern matching, Static reflection, Better library support for coroutines, Make the preprocessor redundant, Integrated support for static analysis.
   * Stability / compatibility.
   * Performance: No bloat in the implementation of language features and standard library components.
+  * A package mechanism. A repository of packages.
+  * More C++ Core Guidelines.
+  * Static analysis supporting code transformation.
 
