@@ -27,13 +27,13 @@
 * auto Variable Type Deduction: 
   * Variables whose types are deduced with auto work much the same way as template parameters.
 * Decorating the auto Placeholder: 
-  * Just like template parameter or auto variable, the return type can be deduced as a (cv-qualified) reference, pointer or function type.
+  * Just like template parameters or auto variable, the return type can be deduced as a (cv-qualified) reference, pointer or function type.
 * Deduced Conversion Operators: 
   * Conversion operators can have deduced return types. 
   * Conversion operators cannot have the same prototype, even if they deduce different types.
 * Syntactic Limitations: 
   * Declaration and definition must declare their return types the same way. 
-  * Disallowed deduction contexts: virtual function, initializer list (it's basically like a temporary, it would be out of scope before we can use it) and template specialization (example: vector<auto> v()).
+  * Disallowed deduction contexts: virtual function, initializer list (it's basically like a temporary, it would be out of scope before we can use it) and template specialization.
   * Function type cannot be deduced until body has been seen.
 * decltype(auto) Placeholder (introduced in C++14). 
   * Initializing a variable with the auto placeholder discards the top-level cv and ref qualifiers of the expression, whereas the decltype(auto) placeholder preserves them. 
