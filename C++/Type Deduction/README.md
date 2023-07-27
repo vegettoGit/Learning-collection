@@ -7,14 +7,13 @@
 * A few things to note about decltype(expr): 
   * It yields the type of expr, including any reference or cv qualifiers. 
   * These qualifiers can be discarded by using std::remove_cvref_t (since C++20). 
-  * Be extra cautious of applying decltype to an id-expression (variable name). 
-  * Adding an extra parenthesis means it's not longer an id-expression, it's then a regular expression.
+  * Be extra cautious of applying decltype to an id-expression (variable name). Adding an extra parenthesis means it's not longer an id-expression, it's then a regular expression.
 * The Trailing return type makes the code easier to write in various scenarios:
   * Omitting Namespace and Class Qualifiers.
   * Using a Runtime Argument by Name (example: decltype(v.begin()), where v is of the type std::vector<T>).
   * Readable Complex Return Types. Example: If the return type is a pointer-to-function or pointer-to-class-member-function. Another example: Function template return type is dependent on the result of an expression.
   * Lambda expressions: A leading return type cannot be specified for a lambda expression, but a trailing return type can.
-* Use Trailing return types a often as desired to improve your code. 
+* Use Trailing return types as often as desired to improve your code. 
   * Simplifies expression of complex return types and separates return-type logic from the function signature. 
   * Provides consistency between regular function and lambda expression syntax. 
 * Trailing return type vs auto return type. 
