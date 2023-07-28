@@ -13,7 +13,7 @@
 * There are open source implementations of a lock-free `std::atomic<std::shared_ptr<T>>`
   * Anthony Williams's implementation (proof of concept), author of C++ Concurrency in Action.
   * Folly's implementation by Dave Watson (production).
-  * Vladislav Tyulbashev's implementation (prrof of concept).
+  * Vladislav Tyulbashev's implementation (proof of concept).
 * Lock-free implementation of `std::atomic<std::shared_ptr<T>>`:
   * The control block pointer and the refcount need to be updated as a single operation. 
   * We need a `double compare-and-swap`, for which we don't really have an operation on any modern CPU. 
@@ -25,7 +25,7 @@
   * Involves at least 3 atomic operations, more under contention.
   * Is slower than mutex when there is no contention.
   * Is much better than mutex under high contention.
-* In reality though, std::shared_ptr<T> has more components such as a `weakcount`, a deleter or a custom allocator. Additionally, a pointer to the object T exists in not just the control block, but also in the shared_ptr itself. Do we then need to modify 3 memory locations (control block pointer, local refcount and object pointer) in a single operation? In fact, due to std::shared_ptr's aliasing constructor, where the shared_ptr manages the lifetime of one object, but it's actually pointing to another object (which has the same lifetime as the first object, for example it can be a member of that first object, or a base class), we might need to handle multiple object pointers.
+* In reality though, `std::shared_ptr<T>` has more components such as a `weakcount`, a deleter and a custom allocator. Additionally, a pointer to the object T exists in not just the control block, but also in the shared_ptr itself. Do we then need to modify 3 memory locations (control block pointer, local refcount and object pointer) in a single operation? In fact, due to std::shared_ptr's aliasing constructor, where the shared_ptr manages the lifetime of one object, but it's actually pointing to another object (which has the same lifetime as the first object, for example it can be a member of that first object, or a base class), we might need to handle multiple object pointers.
   * Anthony Williams's solution: Instead of storing an object pointer, store an index (alias_index) into another data structure (in the likes of a linked list and with just the push_back operation for growing and a lookup function) which contains the object pointers (base, derived, etc.). Put the local refcount and the alias index into a single integer. The linked list structure requires memory allocations though and that cannot be lock-free. Timur explores a possible solution for that.
 * `double-width compare-and-swap` (DWCAS) is supported in every modern CPU:
   * x86: cmpxchg8b
