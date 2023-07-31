@@ -1,3 +1,42 @@
+## [Introduction to Hardware Efficiency in Cpp - Ivica Bogosavljevic - CppCon 2022](https://www.youtube.com/watch?v=Fs_T070H9C8&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+### Topics covered:
+* Hardware efficiency is important for peak performance. We want the best usage of hardware resources.
+* 2 major bottlenecks: 
+  * Computationally intensive or CPU bound (limited by CPU resources).
+  * Memory intensive or memory bound (limited by the memory subsystem).
+  * Others: Disk bound, network bound.
+* Dedicated profiling tools to read the hardware performance counters: Intel's VTUNE, AMD uProf, pmu-tools, perf or LIKWID.
+* Optimizing computationally intensive code.
+  * Code which is processing simple data types, where the data is stored in an array / vector and with sequential access to values.
+  * Domains: Image / audio / video processing, machine learning, telecommunications, scientific computing.
+* Introduction to vectorization.
+  * SIMD: Single Instruction, Multiple Data. Modern CPUs can process multiple data in a single instruction.
+  * Automatic compiler vectorization is not always possible. Compilers auto-vectorize loops when certain conditions are met.
+  * Prerequisites for autovectorization: Simple data types, sequential memory access pattern, independent iterations, number of iterations known, not many conditionals within the loop, no pointer aliasing.
+  * A few tips: Loop fission (split loop into vectorizable and non-vectorizable parts), loop unswitching (move invariants outside of the loop) and loop sectioning (iterate in smaller sections).
+* Optimizing memory intensive code.
+  * Instead of using a vector that contains instances of a class, each member of the class has its own vector.
+  * From Array of Structs to Struct of Arrays.
+  * Processing a matrix column wise is memory bound. Make sure we are accessing the data sequentially.
+  * CPUs are much faster than memory. CPUs are data starved.
+  * Solution: Data cache memory. Accessing a piece of data which is already in the cache is fast.
+* When do cache misses typically happen?
+  * Dereferencing a pointer for the first time (pointer data members, heap allocated objects, vector of pointers, chasing pointers).
+  * Accessing a member of an array in a random fashion.
+  * Lookup in a hash map or a binary tree (std::set, std::unondered_set, std::map, std::unordered_map).
+* When do cache hits typically happen?
+  * Iterating sequentially through an array / vector.
+  * Keeping the data set small.
+  * Data accessed together should be close neighbors in memory.
+  * What is accessed one after another (linked list, binary tree) should be laid out in contiguous memory.  
+* The CPU has a component called data prefetcher. If the memory access pattern is predictable, it prefetches the data before is needed. That's why data access is so much faster for contiguous structures such as arrays and vectors.
+  * Vector of values vs vector of pointers.
+* Why is it faster to process small classes?
+  * The data is brought to the CPU in blocks (typically 64 bytes).
+  * Large classes bring in unused data to the CPU. This is wasted memory bandwidth.
+  * Data members that are often accessed together should be declared together in the class definition, increasing their chances to be in the same cache block.  
+* Always measure!
+
 ## [The Hidden Performance Price of C++ Virtual Functions - Ivica Bogosavljevic - CppCon 2022](https://www.youtube.com/watch?v=kRdbqjw2WIs&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
 ### Topics covered:
 * Virtual functions in C++:
