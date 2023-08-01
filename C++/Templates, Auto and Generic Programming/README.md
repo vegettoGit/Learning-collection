@@ -8,8 +8,8 @@
   * Last element is quite simple as well: `constexpr auto last_pack_element = (..., (args = args));`.
   * Get both first and last at once: `constexpr auto [first, last] = [] (auto first, auto... ts) { return std::tuple{first, (ts, ...)}; } (1, 2, 3);`.
   * So how can we do `constexpr auto nth = nth_pack_element<N>(1, 2, 3);`?
-  * `template<auto N> [[nodiscard]] constexpr auto get(auto t) { return nth_pack_element<N>(...);`.
-* Various solutions to grabbing the <N>th pack element since we got Variadic Packs in C++11.
+  * `template<auto N> [[nodiscard]] constexpr auto get(auto t) { return nth_pack_element<N>(...); }`.
+* Various solutions to grabbing the Nth pack element since we got Variadic Packs in C++11.
   * std::array (for same types only).
   * Recursion.
   * Arg expansion. Apply Immediately-Invoked Function Expression (IIFE).
