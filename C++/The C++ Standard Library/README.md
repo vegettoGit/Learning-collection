@@ -11,10 +11,10 @@
   * std::list. It's a doubly linked list. Provides forward and backward access. Strength: Insert and delete at each position. Weakness: No random access. Optimized for begin O(1) and end O(1). No iterator invalidation.
   * std::forward_list (C++11). It's a single linked list. Does not know its length. Provides forward access only. Strength: Fast insertion and deletion, minimal memory requirements. Weakness: No random access. Optimized for begin O(1). No iterator invalidation.
 * Ordered Associative Containers: std::map, std::set, std::multimap, std::multiset. They are sorted.
-  * Structure. It's a binary balanced search tree. Sorted in ascending order on the key (by default). Have a type(s), comparison function and an allocator.
+  * Structure. They are binary balanced search trees. Sorted in ascending order on the key (by default). Have a type(s), comparison function and an allocator.
   * Implementation. std::maps's index operator [] creates a new key/value pair if the key is not available, invoking the default constructor of the value. This happens even when reading. To avoid this, we can use "at" instead of "[]".
 * Unordered Associative Containers (C++11): std::unondered_map, std::unordered_set, std::unordered_multimap, std::unordered_multiset. Also known as dictionary, associative arrays or hash tables. They extend the interface of the ordered associative containers.
-  * Structure. It's a sequence of (key, value) pairs. Have a data type(s), hash function, equal function and an allocator.
+  * Structure. They are a sequence of (key, value) pairs. Have a data type(s), hash function, equal function and an allocator.
   * Implementation. Apply the hash function on the key. This gives us a unique id. Apply unique id % number of buckets, this gives us a bucket to access to so we can get the value. The hash operation is constant O(1) but searching on the bucket is linear O(n), which is why we want to keep the buckets as small a possible. The Load Factor is the average number of elements of each bucket. Rehashing means that new buckets are created by default if the load factor is bigger than 1.
 * Best Friends:
   * Sequence Containers. Prefer std::array and std::vector to a C-array. Use std::array if the container size is known at compile time and small (the stack is 1 to 2 Mb). Use std::vector if the container size is not known at compile time or big. std::vector and std::array manage their memory (RAII) and have an ideal memory layout (contiguous).
