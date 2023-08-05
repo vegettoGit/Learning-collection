@@ -9,7 +9,7 @@
   * Debugging memory consumption issues.
   * Peak Contributions, Largest Memory Leaks, Most Memory Allocations, Most Temporary Allocations.
 * Coverage tools / Icov.
-  * For each line in your source code, it shows you how many times that line was executed. You might find out lines that were never executed.
+  * For each line in your source code, it shows you how many times that line was executed. You might find out that some lines of code were never executed.
   * When running with Icov for debugging, your program will run slower as the compiler has added new lines of code behind the scenes.
 * Kernel call tracing / Strace.
   * Observe how your program talks with the OS.
