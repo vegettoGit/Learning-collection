@@ -15,7 +15,7 @@
   * The shape is the interface. For example, we can use a concrete type (`std::vector`), a view object (`std::span`) or a polymorphic object (`any_range`).
   * `std::span` only works with contiguous sequences, whereas `any_range` works with all sequences.
   * For constant data, use `const &`.
-  * For data that we are treating as constant (read-only), but might still change externally by another thread, use `std::atomic_ref<const T>`.
+  * For data that we are treating as constant (read-only), but might still be changed externally by another thread, use `std::atomic_ref<const T>`.
 * Types of dependencies: Behaviour.
   * Stateful effect (server request), get data on-demand (reading a file from disk), perform pure computation.
   * A behaviour can be a Single action or a Bundle of actions.
@@ -24,14 +24,14 @@
   * For a bundle with runtime polymorphism, use an Abstract Base Class.
   * For a bundle with static polymorphism, use a concept.
 * Passing dependencies to components.
-  * Avoid using setters. They enable cycles, confuse lifetimes, force to handle change at runtime, for to handle not being set.
+  * Avoid using setters. They enable cycles, confuse lifetimes, force to handle change at runtime, force to handle not being set.
   * Passing to the constructor. Decoupling, Lifetime is automatic, Easy sharing (unless using unique_ptr).
   * Passing as argument to a function.
   * Factories. `shared_ptr` aliasing constructor.
 * Abstracting Components.
   * Problem: Complex wiring, knowledge required for wiring.
   * We want to expose higher level components.
-  * Whem implementing an interface, expect a dependency.
+  * When implementing an interface, expect a dependency.
   * Use a factory to defer decisions.
   * Use a struct. Use a function that returns the created struct (taking advantage of copy elision and RVO). The constructor does all the wiring for the dependent components. Has automatic lifetime and allows us to expose multiple interfaces (in the public section). However it doesn't support polymorphism (for that we can use the factory).
 
