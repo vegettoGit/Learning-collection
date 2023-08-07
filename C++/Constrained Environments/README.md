@@ -9,23 +9,23 @@
   * CPUs typically communicate with external devices via device registers.
   * A device register is circuitry that provides an interface to a device.
   * "Typical" Address Space.
-  * In C++, you can access a memory-mapped register as if it as an ordinary object via an appropiately-initialized pointer.
+  * In C++, you can access a memory-mapped register as if it was an ordinary object via an appropiately-initialized pointer.
   * Many hardware devices have multiple registers, often located at contiguous addresses.
 * Setting Up for the Target Hardware.
   * Operator New Overload.
   * Operator Delete Overload.
 * Challenges of Real Hardware.
 * Simulating Individual Registers.
-  * Our simulation should produce the side effects of accessing hardware regiters, when accessing device registers.
+  * Our simulation should produce the side effects of accessing hardware registers, when accessing device registers.
   * Our device register objects will need to support on-read and on-write effects.
-* The device_register Class.
+* The `device_register` Class.
   * The conversion operator defines an implicit conversion from a user-defined type to another type. It provides a place to insert the code for the on-read side effect.
   * Overload operator `=`. This is a place to trigger code for the on-write side effect.
   * Supports the bitwise operations `&=` and `|=`. They involve writing and reading, so they trigger both side effects.
 * Side Effects by Location.
   * Let's base each register's side effect on its memory location.
   * Each side effect is a pointer to function that takes `std::uint32_t` (representing the value of the register): `void (*) (std::uint32_t);`. We can also use `std::function<std::uint32_t>`.
-  * `device_register` will use a static std::map that associates each `device_register`'s location with its effect handlers object.
+  * `device_register` will use a static `std::map` that associates each `device_register`'s location with its effect handlers object.
 * Dynamic Memory and Simulations.
   * Dynamically-allocated memory might not be available on embedded systems. This makes it hard to use containers such as `std::map`. It's never used on the target hardware, it's just for the simulation.
 
