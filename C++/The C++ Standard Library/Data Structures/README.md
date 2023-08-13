@@ -5,7 +5,7 @@
   * Parallel computation. Check keys in parallel.
   * Efficient encoding of metadata. Keys & Values.
 * Hash Table Briefing.
-  * Chaining (Close addressing). Extremely bad locality. `std::unordered_map` uses chaining.
+  * Chaining (Closed addressing). Extremely bad locality. `std::unordered_map` uses chaining.
   * Probing (Open addressing).
 * Robin Hood Fundamentals.  
   * Linear probed hash table.
