@@ -1,3 +1,25 @@
+## [C++ Algorithmic Complexity, Data Locality, Parallelism, Compiler Optimizations, & Some Concurrency - Avi Lachmish - CppCon 2022](https://www.youtube.com/watch?v=0iXRRCnurvo&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+### Topics covered:
+* Cache Friendly Software.
+  * Traverse by columns vs Traverse by rows.
+* CPU Caches.
+  * Data (D-cache), Instruction (I-cache), Translation lookaside buffer (TLB, translation between virtual memory and physical memory).
+* Cache Hierarchies.
+  * L1, L2, L3.
+* CPU Cache Characteristics:
+  * Much faster than main memory.
+  * 100% CPU utilization, >99% CPU idle time! When profiling, it might look like the CPU is being utilized when it's fetching memory.
+* Cache model.
+  * K = 2 Way Associative Cache. A cache line's set determines k possible cache locations.
+  * Cache lines.
+  * Cache Line Prefetching.
+  * Types of Cache Misses: Cold Miss, Capacity Miss, Conflict Miss, Sharing Miss (True Sharing, False Sharing).
+  * Prefetcher. It works best for predictable linear memory access. Use cache friendly containers that have contiguous memory, no pointer chasing (`vector`, `flat_set`, `flat_map`).
+* Code is memory too.
+  * Code is also cached, with the same caching behavior as data.
+  * Rearrange branches (put cold away from hot).
+* Object Oriented Design vs Data Oriented Design.
+
 ## [Observability Tools C++: Beyond GDB and printf - Tools to Understand the Behavior of Your Program - Ivica Bogosavljevic - CppCon 2022](https://www.youtube.com/watch?v=C9vmS5xV23A&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
 ### Topics covered:
 * On an unfamiliar codebase, we want to analyze: Hot and cold functions, timeline, memory usage, hardware efficiency, how the program interacts with the operating system. Debuggers and printf aren't enough.
