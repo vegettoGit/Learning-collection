@@ -14,7 +14,7 @@
   * Cache lines.
   * Cache Line Prefetching.
   * Types of Cache Misses: Cold Miss, Capacity Miss, Conflict Miss, Sharing Miss (True Sharing, False Sharing).
-  * Prefetcher. It works best for predictable linear memory access. Use cache friendly containers that have contiguous memory, no pointer chasing (`vector`, `flat_set`, `flat_map`).
+  * Prefetcher. It works best for predictable linear memory access. Use cache friendly containers that have contiguous memory (`vector`, `flat_set`, `flat_map`), no pointer chasing.
 * Code is memory too.
   * Code is also cached, with the same caching behavior as data.
   * Rearrange branches (put cold away from hot).
