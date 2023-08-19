@@ -1,3 +1,15 @@
+## [Using Incredibuild to Accelerate Static Code Analysis and Builds - Jonathan "Beau" Peck - CppCon 2022](https://www.youtube.com/watch?v=M7zMl2WOp6g&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+### Topics covered:
+* Setting the Table.
+  * Accelerate: Compilation, Shader / Render / VFX, Tests, Static Code Analysis, CI / CD.
+* Development Acceleration Platform.
+  * How does it work? Process Virtualization.
+  * Core Architecture: Initiator, Coordinator, Helpers (Dynamically managed resource pool). Heterogeneous compute.
+  * Incredibuild Cloud. Orchestration Service.
+  * CI/SpeeD with Github Actions.
+  * Static Code Analysis. Klocwork.
+* How Can I Use The Platform + Demos.
+
 ## [New in Visual Studio 2022 - Conformance, Performance, Important Features - Marian Luparu & Sy Brand - CppCon 2022](https://www.youtube.com/watch?v=vdblR5Ty9f8&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
 ### Topics covered:
 * Conformance.
