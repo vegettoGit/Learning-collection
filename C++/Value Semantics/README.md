@@ -1,3 +1,33 @@
+## [Back to Basics: Cpp Value Semantics - Klaus Iglberger - CppCon 2022](https://www.youtube.com/watch?v=G9MxNwUoSt0&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+### Topics covered:
+* The Source of Classic OO Design Patterns.
+  * Design Patterns: Elements of Reusable Object-Oriented Software.
+* A Classic Visitor Implementation. 
+  * A lot of pointers floating around (indirections affect performance).
+  * Manual allocations (involves memory fragmentation).
+  * Explicitly managing lifetimes.
+* A Value Semantics Solution: `std::variant`. A Modern Visitor Style.
+  * It's a value.
+  * No base class required (non-intrusive). No inheritance hierarchy. There are no virtual functions.
+  * For the code the user writes, there are no pointers or indirections, no manual dynamic memory allocations.
+  * No need to manage lifetime. No need for smart pointers.
+  * The code is so much simpler (KISS).
+  * Better performance.
+* Value Semantics:
+  * Will make your code easier to write and easier to understand (less code).
+  * Will make your code more correct and potentially faster.
+  * Is preferable in comparison to reference semantics.
+* Reference Semantics: `std::span`.
+  * It's dangerous to keep a `std::span` around for longer. For example, if it points to a vector that is then reallocated.
+  * It is reasonable to have `std::span` as a function argument.
+* Reference Semantics: Reference Parameter. `std::erase`.
+* Examples from the Standard Library.
+  * The Design of the STL was in terms of Value Semantics. Containers are values (copy implies a deep copy, we don't do a shallow copy). Algorithms take arguments by value.
+  * `std::optional` (C++17) is a value type. It's efficient (RVO and move semantics).
+  * `std::expected` (C++23) is a value type.
+  * `std::function` (C++11) is a value type. Comparison with the Command Design Pattern.
+  * `std::any` (C++17) is a value type.
+
 ## [Value Semantics: Safety, Independence, Projection, & Future of Programming - Dave Abrahams - CppCon 22](https://www.youtube.com/watch?v=QthAU-t3PQ4&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
 ### Topics covered:
 * Global variables cause problems.
