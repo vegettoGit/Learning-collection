@@ -11,7 +11,7 @@
 * First implementation.
 * 2nd Try. Utilizing Interfaces.
 * 3rd round. Making our `ISubject` more powerful. `MessageTypes`, Multiple Observers.
-* Observer Patter Usage: Java, Godot Engine, Blender3D, Maya3D, Ogre3D.
+* Observer Pattern Usage: Java, Godot Engine, Blender3D, Maya3D, Ogre3D.
 * Revisiting Angry Birds.
 
 ## [Breaking Dependencies - The Visitor Design Pattern in Cpp - Klaus Iglberger - CppCon 2022](https://www.youtube.com/watch?v=PEcy1vYHb8A&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
