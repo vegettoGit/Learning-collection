@@ -2,10 +2,10 @@
 ### Topics covered:
 * Move semantics: Move or duplicate.
 * Overloads.
-* Trigerring the rvalue-overload. `std::move` is a cast.
+* Triggering the rvalue-overload. `std::move` is a cast.
 * The value categories.
-* The place of potential performance win.
-* A moved from object is nothing special.
+* The place of a potential performance win.
+* A "moved from" object is nothing special.
 * The Standard Template Library (STL), move and custom object.
 * `std::move` is not always the right thing.
 * `move` or `forward`.
