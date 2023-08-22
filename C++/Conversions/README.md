@@ -21,7 +21,7 @@
 * `start_lifetime_as`, `start_lifetime_as_array`.
 * Ending an Object's Lifetime:
   * Lifetime can end in the usual ways: Object with automatic storage duration goes out of scope. Object with dynamic storage duration is deleted.
-  * Can also end in other ways: Pseudo-destructor call (`t.~T()`, `ptr->~T()`. Reuse of backing storage.
+  * Can also end in other ways: Pseudo-destructor call (`t.~T()`, `ptr->~T()`). Reuse of backing storage.
 * `std::launder`.
   * Reusing storage invalidates pointers and references to the old object. Unless the old and new objects are "transparently replaceable". Pointers point to the storage but no longer to the object.
   * `std::launder` obtains a pointer to the object from a pointer to the storage.
