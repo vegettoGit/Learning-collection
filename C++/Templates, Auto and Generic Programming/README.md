@@ -26,7 +26,7 @@
   * Templates for a variable number of template arguments, named parameter packs.
   * `if constexpr`.
 * `auto` as Function Parameters.
-  * Concepts a Type Constraints. Overload resolution prefers more specialized template.
+  * Concepts as Type Constraints. Overload resolution prefers the more specialized template.
   * `requires` and Compile-Time `if`.
 
 ## [Nth Pack Element in C++ - A Case Study - Kris Jusiak - CppCon 2022](https://www.youtube.com/watch?v=MLmDm1XFhEM&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
