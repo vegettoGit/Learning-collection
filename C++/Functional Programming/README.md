@@ -14,7 +14,7 @@
   * Contemporary C++ has become more functional: lambdas & closures, `std::function`, value types and constants, lazy ranges, folding, mapping, partial application (bind), higher-order functions, monads such as optional, future...
   * A Taste of Haskell.
   * Quick Sort.
-* True Story: Word frequencies problem. Donald Knuth, "Programming Pearls" column in the Communication of the ACM journal. Doug Mcllroy.
+* True Story: Word frequencies problem. Donald Knuth, "Programming Pearls" column in the Communications of the ACM journal. Doug Mcllroy.
   * It's all about | pipelines.
 * Books
   * Category Theory for Programmers. Bartosz Milewski.
@@ -35,7 +35,7 @@
   * Lifting a function to a vector.
 * Values.
   * Expressions yield values, Statements do not.
-  * Vaue-oriented design reconciles functional and procedural programming by focusing on value semantics. Liike functional programming, it promotes local reasoning and composition.
+  * Vaue-oriented design reconciles functional and procedural programming by focusing on value semantics. Like functional programming, it promotes local reasoning and composition.
 * Immutable.
   * Top 4 places to never use const.
 * C++ 20 Ranges.
