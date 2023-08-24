@@ -1,3 +1,39 @@
+## [C++23 - What's In It For You? - Marc Gregoire - CppCon 2022](https://www.youtube.com/watch?v=b0NkuoUkv0M&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+### Topics covered:
+* C++23 Core Language:
+  * Deducing this.
+  * `if consteval`.
+  * Multidimensional Subscript Operator.
+  * Attributes on Lambda-Expressions.
+  * Literal Suffix for `size_t`.
+  * auto(x): decay-copy in The Language.
+  * `#elifdef`, `#elifndef`, `#warning`.
+  * Marking Unreachable Code.
+  * Assumptions. `[[assume(expr)]]`.
+  * Named Universal Character Escapes.
+  * Trim Whitespace Before Line Splicing.
+* C++23 Standard Library:
+  * String Formatting Improvements.
+  * Standard Library Modules.
+  * `std::flat_map`, `std::flat_multimap`.
+  * `std::mdspan`.
+  * `std::generator`.
+  * `basic_string(_view)::contains()`.
+  * Construct `string(_view)` From `nullptr`.
+  * `basic_string::resize_and_overwrite()`.
+  * Monadic Operations for `std::optional`.
+  * Stacktrace Library.
+  * Changes to Ranges Library.
+  * Changes to Views Library.
+  * `std::expected`.
+  * `std::move_only_function`.
+  * `std::spanstream`.
+  * `std::byteswap()`.
+  * `std::to_underlying()`.
+  * Associative Containers Heterogeneous Erasure.
+* Removed Features.
+  * Garbage Collection Support.
+
 ## [What’s New in C++23 - Sy Brand - CppCon 2022](https://www.youtube.com/watch?v=vbHWDvY59SQ&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
 ### Topics covered:
 * std::views::chunk(size): Groups the elements in chunks of the given size.
