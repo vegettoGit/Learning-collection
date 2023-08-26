@@ -1,4 +1,28 @@
-## [Back to Basics: The C++ Core Guidelines - Rainer Grimm - CppCon 2022](https://www.youtube.com/watch?v=UONLB7wBVSc&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [Pragmatic Simplicity - Actionable Guidelines To Tame Cpp Complexity - Vittorio Romeo - CppCon 2022](https://www.youtube.com/watch?v=3eH7JRgLnG8)
+### Topics covered:
+* Focus on low-level complexity: abstraction design, coding style, use of language features, etc.
+* Objective: Derive pragmatic and actionable guidelines.
+* Defining "simplicity" and "complexity".
+* 1st precept: Use the most limited tool for the job.
+   * Casting, emplacing, locking.
+   * `std::array` vs `T[]`. `std::variant` vs regular virtual polymorphism, `std::byte` vs `char`. `enum class` vs `enum`. `auto&&` vs `const auto&`.
+   * `absl::hash_map` vs ``std::unordered_map` vs `std::map`.
+   * Aggregate types vs non-aggregates.
+   * Uniform initialization.
+   * `T` -> `std::unique_ptr<T>` -> `std::shared_ptr<T>`.
+   * Using `irange` is less powerful than the traditional loop.
+* 2nd precept: Value is a function of rarity.
+   * Attributes, `auto`, `noexcept`. Sparingly using a feature increases its value and reduces noise.
+   * A note on final (on classes). Inheritance in C++ is not always about polymorphism. "strong typedef".
+   * `constexpr` functions.
+   * Trailing return types. Consistent with 1st precept.
+   * `const` variables.
+   * `override` contextual keyword.
+* A note on consistency.
+   * Consistency for the sake of it is harmful.
+   * Value correctness and simplicity over consistency. Go for consistency afterwards.
+
+## [Back to Basics: The C++ Core Guidelines - Rainer Grimm - CppCon 2022](https://www.youtube.com/watch?v=UONLB7wBVSc)
 ### Topics covered:
 * Best Practices for the Usage of C++.
 * Most Prominent Guidelines.
@@ -54,9 +78,9 @@
   * Prefer std::array and std::vector to a C-array. They should be your first choice for a sequence container.
 * Guidelines Support Library.
 
-## [Typical C++, But Why? - Björn Fahller - NDC TechTown 2022](https://www.youtube.com/watch?v=PmVmaT1JNbw&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [Typical C++, But Why? - Björn Fahller - NDC TechTown 2022](https://www.youtube.com/watch?v=PmVmaT1JNbw)
 
-## [Better Code: Data Structures - Sean Parent - CppCon 2015](https://www.youtube.com/watch?v=sWgDk-o-6ZE&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [Better Code: Data Structures - Sean Parent - CppCon 2015](https://www.youtube.com/watch?v=sWgDk-o-6ZE)
 
 
 
