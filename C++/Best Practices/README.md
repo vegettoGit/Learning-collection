@@ -5,8 +5,8 @@
 * Defining "simplicity" and "complexity".
 * 1st precept: Use the most limited tool for the job.
    * Casting, emplacing, locking.
-   * `std::array` vs `T[]`. `std::variant` vs regular virtual polymorphism, `std::byte` vs `char`. `enum class` vs `enum`. `auto&&` vs `const auto&`.
-   * `absl::hash_map` vs ``std::unordered_map` vs `std::map`.
+   * `std::array` vs `T[]`. `std::variant` vs regular virtual polymorphism. `std::byte` vs `char`. `enum class` vs `enum`. `auto&&` vs `const auto&`.
+   * `absl::hash_map` vs `std::unordered_map` vs `std::map`.
    * Aggregate types vs non-aggregates.
    * Uniform initialization.
    * `T` -> `std::unique_ptr<T>` -> `std::shared_ptr<T>`.
