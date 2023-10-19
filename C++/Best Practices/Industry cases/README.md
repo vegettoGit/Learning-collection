@@ -1,4 +1,4 @@
-## [How Microsoft Uses C++ to Deliver Office - Huge Size, Small Components - Zachary Henkel - CppCon 2022](https://www.youtube.com/watch?v=0QtX-nMlz0Q&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [How Microsoft Uses C++ to Deliver Office - Huge Size, Small Components - Zachary Henkel - CppCon 2022](https://www.youtube.com/watch?v=0QtX-nMlz0Q)
 ### Topics covered:
 * Background
 * Huge Size:
