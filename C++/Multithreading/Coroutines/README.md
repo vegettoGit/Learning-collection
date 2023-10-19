@@ -1,3 +1,17 @@
+## [Implementing a C++ Coroutine Task from Scratch - Dietmar Kühl - ACCU 2023](https://www.youtube.com/watch?v=Npiw4cYElng)
+### Topics covered:
+* Coroutine Support.
+  * No coroutine classes as part of the C++20 standard.
+  * The C++23 standard library only provides a generator.
+* What could be `co_await`'ed?
+  * Async operations (I/O, waiting for another thread), external events (user interaction, other programs), unavailable resources, reordering of data, delayed access.
+* Key Concepts: Awaiter (specifying how async work is executed), Promise type (specifying how a coroutine operates).
+* value = `co_await` expression;
+* Awaiter Type: `await_ready()`, `await_suspend()`, `await_resume()`.
+* C f() { ... `co_*` ... }
+* Promise Type: `initial_suspend()`, `final_suspend()`, `unhandled_exception()`, `get_return_object()`.
+* Demo Time.
+
 ## [Deciphering C++ Coroutines - A Diagrammatic Coroutine Cheat Sheet - Andreas Weis - CppCon 2022](https://www.youtube.com/watch?v=J7fYddslH0Q)
 ### Topics covered:
 * Coroutine Basics. Essential use cases for coroutines.
