@@ -1,3 +1,29 @@
+## [Building C++ Interfaces That Are Hard to Use Incorrectly - Andreas Weis - ACCU 2023](https://www.youtube.com/watch?v=PIyZ9aosHQg)
+### Topics covered:
+* Motivation.
+* Categorization of precondition violations.
+  * What is incorrect use? `std::vector` example.
+  * Function Preconditions.
+  * Wide Contracts - Defensive Programming.
+  * Precondition Violations: Invalid argument, Invalid context.
+* Leveraging the type system to prevent precondition violations.
+  * Type System to the rescue!
+  * Opaque Types, `glTexImage2D` example, Enumerators, Scoped Enumerators, Scoped Enumerators as Opaque Typedefs, Opaque Typedefs.
+  * Structuring arguments.
+  * Structured Data Access.
+  * Data Types with special properties.
+* Techniques for restricting access to data.
+  * Limited Friendship. Access Token.
+  * Declarative Interface. `glBufferData`, `glVertexAttribPointer`.
+* Techniques for restricting control flow.
+  * Modeling State Through Types. 
+  * Two-Phase Initialization.
+  * Error Handling Paradigms. C++23 `std::expected`.
+  * Execution Tokens.
+  * Scoped Execution Contexts.
+  * Complex State Machines.
+  * The GoF State Pattern.
+
 ## [Back to Basics: C++ API Design - Jason Turner - CppCon 2022](https://www.youtube.com/watch?v=zL-vn_pGGgY)
 ### Topics covered:
 * Based on Jason Turner's C++ Best Practices book, item #32: "Make Your API Hard to Use Wrong".
@@ -16,9 +42,9 @@
   * Consider passing your own deleter to std::unique_ptr. For example, a lambda that closes a file for a std::unique_ptr which stores a pointer to a file.
   * Avoid easily swappable parameters. Two (or more) parameters beside each other of the same type are easy to swap. clang-tidy has a check for this: "[bugprone-easily-swappable-parameters]".
   * Avoid Implicit Conversions / Use Strong Types. Conversion operators and single parameter constructors (including variadic and ones with default parameters) should be "explicit".
-* =delete Problematic Overloads.
-  * Any function can be "-delete"d.
-  * if you "=delete" a template, it will become the match for any non-exact parameters, and prevent implicit conversions.
+* `=delete` Problematic Overloads.
+  * Any function can be `=delete`d.
+  * if you `=delete` a template, it will become the match for any non-exact parameters, and prevent implicit conversions.
   * (Sparingly) delete problematic overloads / prevent conversions.
 * Only Pass Raw Pointers for Single Optional Objects.
   * If you pass a pointer, you must check it for nullptr.
