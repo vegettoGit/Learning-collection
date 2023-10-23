@@ -1,5 +1,29 @@
-## [An Introduction to Multithreading in C++20 - Anthony Williams - ACCU 2022](https://www.youtube.com/watch?v=3uH-2CkBlPQ&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
-### [CppCon 2022 version](https://www.youtube.com/watch?v=A7sVFJLJM-A&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [Designing for C++ Concurrency Using Message Passing - Anthony Williams - ACCU 2023](https://www.youtube.com/watch?v=J-z4Mf9u-Sc)
+### Topics covered:
+* Why use message passing?
+  * Eliminate explicit synchronization.
+  * Eliminate OS-level deadlock.
+  * Eliminate data races.
+* The Cost.
+* Remaining Problems.
+* Message Passing Frameworks.
+  * What is a Message Passing Framework?
+  * Benefits of using a MPF.
+  * Microservices.
+  * Guarantees on lack of reentrancy.
+  * Delivery Mechanisms: in-process, cross-process, cross-network.
+* Design Guidelines.
+  * Focus (Single Responsibility).
+  * Independence.
+  * Messages should be Value Types.
+  * Avoid blocking.
+  * State Machines.
+* Examples.
+  * Dining Philosophers.
+  * A robot control system.
+
+## [An Introduction to Multithreading in C++20 - Anthony Williams - ACCU 2022](https://www.youtube.com/watch?v=3uH-2CkBlPQ)
+### [CppCon 2022 version](https://www.youtube.com/watch?v=A7sVFJLJM-A)
 ### Topics covered:
 * Choosing your Concurrency Model.
   * 2 fundamental reasons we want to use multithreading in our applications: Scalability (Amdahl' law applies) & Separation of Concerns.
@@ -33,9 +57,9 @@
   * Semaphores. Represents a number of available "slots". If we acquire a slot on the semaphore then the count is decreased until we release the slot. Attempting to acquire a slot when the count is zero will either block or fail. A thread may release a slot without acquiring one and viceversa. Semaphores can be used to build just about any synchronization mechanism, including latches, barriers and mutexes. A binary semaphore has 2 states (1 slot free or no slots free) and it can be used as a mutex. In C++20, refer to std::counting_semaphore<max_count>. std::binary_semaphore is an alias for std::counting_semaphore<1>.
   * Atomics. They are the lowest level synchronization primitive. They are written std::atomic<T>, where T must be Trivially copyable and Bitwise comparable. Except T can also be std::shared_ptr<U> or std::weak_ptr<U>. std::atomic<T> may not be lock free, it may use an internal mutex (if so, probably a spin lock). std::atomic_flag, std::atomic_signed_lock_free and std::atomic_unsigned_lock_free are the only guaranteed lock-free types. On most platforms, std::atomic<integral-type> and std::atomic<T*> are lock-free. We can query std::atomic<T>::is_always_lock_free.
 
-## [Concurrency in C++: A Programmer’s Overview (part 1 of 2) - Fedor Pikus - CppNow 2022](https://www.youtube.com/watch?v=ywJ4cq67-uc&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [Concurrency in C++: A Programmer’s Overview (part 1 of 2) - Fedor Pikus - CppNow 2022](https://www.youtube.com/watch?v=ywJ4cq67-uc)
 
-## [Concurrency in C++: A Programmer’s Overview (part 2 of 2) - Fedor Pikus - CppNow 2022](https://www.youtube.com/watch?v=R0V4xJ9HZpA&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [Concurrency in C++: A Programmer’s Overview (part 2 of 2) - Fedor Pikus - CppNow 2022](https://www.youtube.com/watch?v=R0V4xJ9HZpA)
 
-## [Lightning Talk: A Spinlock Implementation - Fedor Pikus - CppNow 2022](https://www.youtube.com/watch?v=rmGJc9PXpuE&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [Lightning Talk: A Spinlock Implementation - Fedor Pikus - CppNow 2022](https://www.youtube.com/watch?v=rmGJc9PXpuE)
 
