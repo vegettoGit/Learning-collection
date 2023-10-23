@@ -14,7 +14,7 @@
   * Data Types with special properties.
 * Techniques for restricting access to data.
   * Limited Friendship. Access Token.
-  * Declarative Interface. `glBufferData`, `glVertexAttribPointer`.
+  * Declarative Interface. `glBufferData`, `glVertexAttribPointer` examples.
 * Techniques for restricting control flow.
   * Modeling State Through Types. 
   * Two-Phase Initialization.
