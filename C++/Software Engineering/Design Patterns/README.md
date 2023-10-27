@@ -1,4 +1,46 @@
-## [The Observer Design Pattern in Cpp - Mike Shah - CppCon 2022](https://www.youtube.com/watch?v=4GU2YNsHrwg&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [Design Patterns: Examples in C++ - Chris Ryan - ACCU 2023](https://www.youtube.com/watch?v=MEejmuLwX9M)
+### Topics covered:
+* History.
+* Architecture, Patterns & Idioms.
+* Design Patterns: Training, Books, Speakers.
+* Daisy Chain Filtering: Intercepting vs Modifying.
+* Dependency Injection.
+* Classification of Software Design Patterns: 
+  * Creational Patterns (Abstract, Builder, Factory, Prototype, Singleton).
+  * Structural Patterns (Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy).
+  * Behavioral Patterns (Chain of Responsibility, Command, Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor).
+  * Concurrency Patterns (Sharing, Mutation, Concurrent Architectures).
+* Design Patterns: Creational.
+* Design Patterns: Structural.
+* Design Patterns: Behavioral.
+* Factory.
+* Abstract Factory.
+* Builder.
+* Prototype (Clone).
+* Singleton (Old style, potential race condition).
+* Singleton (Modern style, leveraging `static`).
+* Monostate (Variation of Singleton).
+* Templatized Factory.
+* Adapter (Basic).
+* Adapter (Abstract).
+* Decorator.
+* Bridge.
+* Flyweight.
+* Facade.
+* Composite.
+* Command.
+* Chain of Responsibility.
+* Interpreter.
+* Iterator.
+* State.
+* Observer.
+* Mediator.
+* Memento.
+* Strategy.
+* Template Method.
+* Visitor.
+
+## [The Observer Design Pattern in Cpp - Mike Shah - CppCon 2022](https://www.youtube.com/watch?v=4GU2YNsHrwg)
 ### Topics covered:
 * Angry Birds game example.
 * Design Patterns.
@@ -14,7 +56,7 @@
 * Observer Pattern Usage: Java, Godot Engine, Blender3D, Maya3D, Ogre3D.
 * Revisiting Angry Birds.
 
-## [Breaking Dependencies - The Visitor Design Pattern in Cpp - Klaus Iglberger - CppCon 2022](https://www.youtube.com/watch?v=PEcy1vYHb8A&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [Breaking Dependencies - The Visitor Design Pattern in Cpp - Klaus Iglberger - CppCon 2022](https://www.youtube.com/watch?v=PEcy1vYHb8A)
 ### Topics covered:
 * A Procedural Solution.
   * Maintainability!
@@ -49,6 +91,6 @@
 * The Acyclic Visitor Design Pattern.
   * Beware the performance!
 
-## [The Singleton Pattern - Anti-Pattern or Solution? - Klaus Iglberger - C++ on Sea 2022](https://www.youtube.com/watch?v=3xFpV3cnGbw&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [The Singleton Pattern - Anti-Pattern or Solution? - Klaus Iglberger - C++ on Sea 2022](https://www.youtube.com/watch?v=3xFpV3cnGbw)
 
 
