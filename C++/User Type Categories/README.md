@@ -1,4 +1,5 @@
-## [A Tour of C++ Recognised User Type Categories - Nina Ranns - CppCon 2022](https://www.youtube.com/watch?v=pdoUnvTwnr4&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [A Tour of C++ Recognised User Type Categories - Nina Ranns - CppCon 2022](https://www.youtube.com/watch?v=pdoUnvTwnr4)
+### [ACCU 2023 version](https://www.youtube.com/watch?v=5LgatImW-js)
 ### Topics covered:
 * Types with special provisions.
 * C++ Object Model.
