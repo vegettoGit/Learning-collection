@@ -1,4 +1,20 @@
-## [C++20’s [[likely]] Attribute - Optimizations, Pessimizations, and [[unlikely]] Consequences - Amir Kirsh & Tomer Vromen - CppCon 2022](https://www.youtube.com/watch?v=RjPK3HKcouA&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [Standard Attributes in C and C++ - Timur Doumler - ACCU 2023 ](https://www.youtube.com/watch?v=TDKqAWtvH9c)
+### Topics covered:
+* What are standard attributes?
+* History of standarisation.
+* Standard attributes in C++. `[[deprecated]]`, `[[maybe_unused]]`, `[[fallthrough]]`, `[[nodiscard]]`, `[[noreturn]]`, `[[carries_dependency]]`, `[[likely]]`, `[[unlikely]]`, `[[assume]]`, `[[no_unique_address]]`.
+  * Classification.
+  * Usage.
+  * Caveats.
+  * Availability in major compilers.
+* Standard attributes in C.
+* Are standard attributes "ignorable"?
+  * Syntactic ignorability.
+  * Semantic ignorability.
+  * Language design rule.
+* Future work.
+
+## [C++20’s [[likely]] Attribute - Optimizations, Pessimizations, and [[unlikely]] Consequences - Amir Kirsh & Tomer Vromen - CppCon 2022](https://www.youtube.com/watch?v=RjPK3HKcouA)
 ### Topics covered:
 * Two new attributes in C++20.
 * Back to History ("It was there before").
