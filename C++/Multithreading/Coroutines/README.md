@@ -1,3 +1,19 @@
+## [Applied C++20 Coroutines - Jim Pascoe - ACCU 2023](https://www.youtube.com/watch?v=ltesWt-92xw)
+### Topics covered:
+* Coroutines. What next?
+  * Fit within the wider concurrency framework.
+  * More examples (real-world and learning).
+  * Empirical measurements.
+  * Library support and the future.
+* Concurrency in Modern C++.
+  * Back To Basics.
+  * How C++20 Coroutines fit (and work).
+* Mobile Wireless Networking with Coroutines.
+* C++20 Example: Web Serving with Boost.Beast.
+  * Asynchronous, Boost.Coroutine, Awaitables.
+  * Empirical analysis with Apache bench (ab).
+* `std::generator`, `std::execution` and `libunifex`.
+
 ## [Implementing a C++ Coroutine Task from Scratch - Dietmar Kühl - ACCU 2023](https://www.youtube.com/watch?v=Npiw4cYElng)
 ### Topics covered:
 * Coroutine Support.
