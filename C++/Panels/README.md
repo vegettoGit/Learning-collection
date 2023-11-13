@@ -1,4 +1,21 @@
-## [ISO C++ Standards Committee Panel Discussion - Hosted by Herb Sutter - CppCon 2022](https://www.youtube.com/watch?v=VI21tpdkHA8&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [C++ And Beyond: Discussion - Vittorio Romeo, Kevlin Henney, Nico Josuttis & Kate Gregory - ACCU 2023](https://www.youtube.com/watch?v=_AmjHjYUx6c)
+### Panelists:
+* Vittorio Romeo, Kevlin Henney, Nicolai Josuttis, Kate Gregory.
+### Moderator: 
+* Bryce Adelstein Lelbach.
+### Topics covered:
+* The greatest challenge C++ is facing today.
+  * Evolving while keeping backwards compatibility, ABI, C++ will continue getting more complex, making the language more welcoming and inclusive, etc.
+* Alternative languages:
+  * Carbon, Rust, Cpp2, Jai (game dev), etc.
+* Why is there so much resistance to making breaking changes in C++?
+* Would C++ be better if it had a single implementation, instead of multiple vendors?
+* C++ package management and build systems. Does it need to be standarized?
+* Large Language Models (LLMs) and our Software Tools.
+* What should C++ programmers do to prepare for the future?
+* What are you most looking forward to in C++23, 26 and beyond?
+
+## [ISO C++ Standards Committee Panel Discussion - Hosted by Herb Sutter - CppCon 2022](https://www.youtube.com/watch?v=VI21tpdkHA8)
 ### Panelists:
 * Bjarne Stroustrup, Daisy Hollman, Daniela Engert, David Sankel, Inbal Levi, Michael Wong, Nina Ranns, Pablo Halpern, Timur Doumler.
 ### Moderator: 
@@ -22,7 +39,7 @@
 * How can we know what's on the table for C++'s Language Evolution?
 * Can we have a Math Plotting library in C++?
 
-## [C++ Meetup Tokyo 22/11/2022](https://www.youtube.com/watch?v=FU5Tl_Zdtmw&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [C++ Meetup Tokyo 22/11/2022](https://www.youtube.com/watch?v=FU5Tl_Zdtmw)
 ### Panelists:
 * Jason Turner, Christopher Di Bella, JF Bastien.
 ### Moderator: 
