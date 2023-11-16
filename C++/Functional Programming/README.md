@@ -1,4 +1,16 @@
-## [The Imperatives Must Go! [Functional Programming in Modern C++] - Victor Ciura - CppCon 2022](https://www.youtube.com/watch?v=M5HuOZ4sgJE&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [And Then() Some(T): C++ Combinators - Higher-Order Functions in Cpp - Victor Ciura - ACCU 2023](https://www.youtube.com/watch?v=bRFLKEfPvgk)
+### Topics covered:
+* Modern C++ is functional.
+* Type Constructors.
+* Functor | Applicative | Monad.
+* Lifting any function.
+* Composition of lifted functions.
+* Monadic `std::optional`.
+* Heritage.
+  * Rust, Haskell (Maybe, Either).
+* `std::expected<T, E>`.
+
+## [The Imperatives Must Go! [Functional Programming in Modern C++] - Victor Ciura - CppCon 2022](https://www.youtube.com/watch?v=M5HuOZ4sgJE)
 ### Topics covered:
 * Functional Programming. What is it all about?
   * A style of programming in which the basic method of computation is the application of functions to arguments.
