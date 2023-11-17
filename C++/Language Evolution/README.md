@@ -1,4 +1,31 @@
-## [Can C++ be 10x Simpler & Safer? - Herb Sutter - CppCon 2022](https://www.youtube.com/watch?v=ELeZAKCN4tY&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [Keynote: C++ Horizons - Bryce Adelstein Lelbach - ACCU 2023](https://www.youtube.com/watch?v=efrgipu94Oc)
+### Topics covered:
+* C++20 is in the field.
+  * Modules, Coroutines, Concepts, Ranges.
+* C++23 is coming!
+  * More ranges, Formatted output, `mdspan`, `expected`, `import std`, Deducing this.
+* On The Horizon For C++.
+  * Reflection, Pattern Matching, Senders.
+* Reflection.
+  * Extract information from the program itself.
+  * Program, Metaprogram.
+  * Reify operator, Splice operator, Identifier splice operator, Splice pack expansion.
+  * Example: Array of Structs to Struct of Arrays.
+* Pattern Matching.
+  * Selection in C++, `inspect`.
+  * Pattern guards.
+  * Compound patterns, Alternative patterns, Extractor patterns.
+  * Example: Generate JSON from C++ types.
+* Senders.
+  * Today, C++ has no standard model for asynchrony.
+  * The solution (Senders) is coming soon.
+  * Schedulers are handlers to execution contexts. Schedulers produce Senders.
+  * Senders represent asynchronous work. They eventually send a Signal.
+  * Receivers process asynchronous Signals.
+  * Senders can be composed together to form Task Graphs.
+  * Pipe syntax.
+
+## [Can C++ be 10x Simpler & Safer? - Herb Sutter - CppCon 2022](https://www.youtube.com/watch?v=ELeZAKCN4tY)
 ### Topics covered:
 * C++ has a lot of challenges.
 * The industry is doing lots of major C++ evolution experiments. This is one of those.
