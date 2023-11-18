@@ -1,4 +1,29 @@
-## [Introduction to Hardware Efficiency in Cpp - Ivica Bogosavljevic - CppCon 2022](https://www.youtube.com/watch?v=Fs_T070H9C8&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [Lightning Talks: 5 Things You Didn't Know Your CPU Did For You - Matt Godbolt - C++ on Sea 2023](https://www.youtube.com/watch?v=gIJ4QdNL6Ro)
+### Topics covered:
+* Your (Intel) CPU:
+  * Guesses how your data is accessed. Prefetches data.
+  * Turns CISC into RISC.
+  * Reschedules your code.
+  * Converts to SSA (Static Single Assignment) Form. Register renaming.
+  * Predicts the Future. Branch Prediction.
+
+## [Lightning Talk: How Fast Are Computers (in Human Terms)? - Matt Godbolt - C++ on Sea 2023](https://www.youtube.com/watch?v=R-ro6EBLqW8)
+### Topics covered:
+* Adding two integers is 1 CPU cycle (0.3 ns).
+* Multiplying two integers (4 cycles, 1.2 ns).
+* Dividing two integers (20-100 cycles, 7-33 ns).
+* Branch mispredict (16-20 cycles, 5-7 ns)
+* Accessing memory (L1) is around 4 cycles (1.3 ns).
+* Accessing memory (L2) is around 12 cycles (4 ns).
+* Accessing memory (L3) is around 40 cycles (13 ns).
+* Accessing memory (main memory) is around 60 to 100 ns.
+* SATA SSD (50 to 150 microseconds).
+* NVMe SSD (20 to 100 microseconds).
+* Spinning disk I/O (1 to 10 ms).
+* Network Ping switch neighbour (200 microseconds).
+* Ping Google.com (1.2 ms).
+
+## [Introduction to Hardware Efficiency in Cpp - Ivica Bogosavljevic - CppCon 2022](https://www.youtube.com/watch?v=Fs_T070H9C8)
 ### Topics covered:
 * Hardware efficiency is important for peak performance. We want the best usage of hardware resources.
 * 2 major bottlenecks: 
@@ -37,7 +62,7 @@
   * Data members that are often accessed together should be declared together in the class definition, increasing their chances to be in the same cache block.  
 * Always measure!
 
-## [The Hidden Performance Price of C++ Virtual Functions - Ivica Bogosavljevic - CppCon 2022](https://www.youtube.com/watch?v=kRdbqjw2WIs&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [The Hidden Performance Price of C++ Virtual Functions - Ivica Bogosavljevic - CppCon 2022](https://www.youtube.com/watch?v=kRdbqjw2WIs)
 ### Topics covered:
 * Virtual functions in C++:
   * Enable flexibility.
@@ -73,12 +98,12 @@
   * Virtual functions (especially large ones where each object has a different implementation) imply that we are switching from one implementation to another. This is cold code.
   * Once again, the best case is when the objects in the container are sorted by type.
 
-## [Refresher on Containers, Algorithms and Performance - Vladimir Vishnevskii - C++ on Sea 2022](https://www.youtube.com/watch?v=zxKGKwwbkU0&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [Refresher on Containers, Algorithms and Performance - Vladimir Vishnevskii - C++ on Sea 2022](https://www.youtube.com/watch?v=zxKGKwwbkU0)
 
-## [Where Have All the Cycles Gone? by Sean Parent](https://www.youtube.com/watch?v=B-aDBB34o6Y&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [Where Have All the Cycles Gone? by Sean Parent](https://www.youtube.com/watch?v=B-aDBB34o6Y)
 
-## [High Performance Code 201: Hybrid Data Structures - Chandler Carruth - CppCon 2016](https://www.youtube.com/watch?v=vElZc6zSIXM&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA) 
+## [High Performance Code 201: Hybrid Data Structures - Chandler Carruth - CppCon 2016](https://www.youtube.com/watch?v=vElZc6zSIXM)
 
-## [Efficiency with Algorithms, Performance with Data Structures - Chandler Carruth - CppCon 2014](https://www.youtube.com/watch?v=fHNmRkzxHWs&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [Efficiency with Algorithms, Performance with Data Structures - Chandler Carruth - CppCon 2014](https://www.youtube.com/watch?v=fHNmRkzxHWs)
 
 
