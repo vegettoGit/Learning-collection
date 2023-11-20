@@ -1,4 +1,18 @@
-## [C++ Algorithmic Complexity, Data Locality, Parallelism, Compiler Optimizations, & Some Concurrency - Avi Lachmish - CppCon 2022](https://www.youtube.com/watch?v=0iXRRCnurvo&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [Most Malleable Memory Management Method in C++ - Björn Fahller - C++ on Sea 2023](https://www.youtube.com/watch?v=0iXRRCnurvo&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+### Topics covered:
+* The heap.
+* Allocators.
+* PMR (Polymorphic Memory Resource) Allocators.
+  * `memory_resource`.
+* `string` frequency example.
+  * With and without PMR.
+  * The default `memory_resource` is `new_delete_resource`.
+  * Using `unsynchronized_pool_resource`.
+* Choosing a memory resource.
+* PMR for your types.
+  * `allocator_type`.
+
+## [C++ Algorithmic Complexity, Data Locality, Parallelism, Compiler Optimizations, & Some Concurrency - Avi Lachmish - CppCon 2022](https://www.youtube.com/watch?v=0iXRRCnurvo)
 ### Topics covered:
 * Cache Friendly Software.
   * Traverse by columns vs Traverse by rows.
@@ -20,10 +34,10 @@
   * Rearrange branches (put cold away from hot).
 * Object Oriented Design vs Data Oriented Design.
 
-## [Recipes for Reducing Allocations by C++ Containers - Lukas Böger - C++ on Sea 2022](https://www.youtube.com/watch?v=ukUoLnCOyio&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [Recipes for Reducing Allocations by C++ Containers - Lukas Böger - C++ on Sea 2022](https://www.youtube.com/watch?v=ukUoLnCOyio)
 
-## [What Do You Mean by "Cache Friendly"? - Björn Fahller - C++ on Sea 2022](https://www.youtube.com/watch?v=yyNWKHoDtMs&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [What Do You Mean by "Cache Friendly"? - Björn Fahller - C++ on Sea 2022](https://www.youtube.com/watch?v=yyNWKHoDtMs)
 
-## [Cpu Caches and Why You Care - Scott Meyers - code::dive conference 2014](https://www.youtube.com/watch?v=WDIkqP4JbkE&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [Cpu Caches and Why You Care - Scott Meyers - code::dive conference 2014](https://www.youtube.com/watch?v=WDIkqP4JbkE)
 
 
