@@ -8,5 +8,7 @@
 * cwhy tool.
 * Reproducibility.
 * Example: Parallel unique.
+* Work step-by-step.
+  * Guide the AI.
 
 
