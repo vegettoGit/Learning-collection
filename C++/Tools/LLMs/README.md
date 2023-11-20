@@ -2,8 +2,8 @@
 ### Topics covered:
 * Neural networks are the building blocks of AI.
 * What do we do? Debugging, bring ideas to life, etc.
- * Creation.
- * Analysis.
+  * Creation.
+  * Analysis.
 * Analyze what we have, Determine what else we need, Collect what we need.
 * cwhy tool.
 * Reproducibility.
