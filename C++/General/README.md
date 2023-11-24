@@ -1,4 +1,4 @@
-## [*(char*)0 = 0; - What Does the C++ Programmer Intend With This Code? - JF Bastien - C++ on Sea 2023](https://www.youtube.com/watch?v=dFIqNZ8VbRY)
+## [`*(char*)0 = 0;` What Does the C++ Programmer Intend With This Code? - JF Bastien - C++ on Sea 2023](https://www.youtube.com/watch?v=dFIqNZ8VbRY)
 ### Topics covered:
 * Single main function, main entry point (global ctors happen before), normal program termination (calls `std::exit(0)`), global dtors called.
 * `reinterpret_cast`.
