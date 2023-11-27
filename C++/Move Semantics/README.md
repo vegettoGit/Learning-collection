@@ -1,4 +1,22 @@
-## [Back to Basics: C++ Move Semantics - Andreas Fertig - CppCon 2022](https://www.youtube.com/watch?v=knEaMpytRMA&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [The C++ Rvalue Lifetime Disaster - Arno Schoedl - C++ on Sea 2023](https://www.youtube.com/watch?v=9V195P3Tv_8)
+### Topics covered:
+* Rvalue References.
+* Rvalue References for Moving - Pitfalls.
+* Temporary Lifetime Extension.
+  * Temporary Lifetime Extension vs `decltype(auto)`.
+* `auto_cref`.
+  * `auto_cref_return` for NRVO/move optimization.
+* C++ Rvalue Amnesia.
+  * Conditional operator afraid of Rvalue Amnesia.
+  * C++20 `common_reference` Not Afraid.
+* Promises of References.
+* Any chance to fix C++?
+  * Reference Declarations.
+  * How to opt in to new behavior?
+  * Impact on Standard Library.
+  * Until then... Mitigations.
+
+## [Back to Basics: C++ Move Semantics - Andreas Fertig - CppCon 2022](https://www.youtube.com/watch?v=knEaMpytRMA)
 ### Topics covered:
 * Move semantics: Move or duplicate.
 * Overloads.
