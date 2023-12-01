@@ -24,7 +24,7 @@
   * `.plt` (Procedure linkage table). Looks in `.got`, but the first time the address is not in `.got` yet and we have to go through the loader.
   * Each process has a separate `.plt` and a separate `.got`.
 * Summary:
-  * Locals, parameters and returns: regisers and stack.
+  * Locals, parameters and returns: registers and stack.
   * Static linking: Global data relocations resolved by linker, function relocations resolved by linker.
   * Dynamic linking: GOT handles global data, PLT + GOT handle functions.
   
