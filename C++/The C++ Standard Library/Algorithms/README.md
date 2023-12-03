@@ -1,4 +1,18 @@
-## [The Dark Corner of STL in Cpp: MinMax Algorithms - Simon Toth - CppCon 2022](https://www.youtube.com/watch?v=jBeTvNgW25M&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [New Algorithms in C++23 - Conor Hoekstra - C++ on Sea 2023](https://www.youtube.com/watch?v=uYFRnsMD9ks)
+### Topics covered:
+* C++ Algorithm Land Overview.
+  * C++98 Iterator Algorithms.
+  * C++20 Range Algorithms.
+  * C++20/23 Range Adaptors and Factories.
+* C++23 Ranges Status.
+  * `iota`, `chunk`, `chunk_by`, `slide`, `stride`, `repeat`, `take`, `zip_transform`, `zip`, `adjacent`, `pairwise`, `adjacent_transform`, `pairwise_transform`, `join_with`, `cartesian_product`, `enumerate`. 
+* Collection Oriented Programming.
+* Warm Up: Num Negatives.
+* Sushi for Two.
+* Max Gap.
+* `filter_out_html_tags`.
+
+## [The Dark Corner of STL in Cpp: MinMax Algorithms - Simon Toth - CppCon 2022](https://www.youtube.com/watch?v=jBeTvNgW25M)
 ### Topics covered:
 * How hard is it to call `std::min`? (or others such as `std::max`, `std::clamp`, `std::minmax`)
   * We can end up with a dangling reference on `std::min`'s returned reference, when either argument on `std::min` is a prvalue.
@@ -15,17 +29,17 @@
   * Remove the potential dangling reference. Return by value.
   * Avoid excessive copies. Only copy when returning by value and only the arguments that are returned.
 
-## [Beginners Guide to C++'s Best Kept Secret -- std::algorithm - Mike Shah - C++ on Sea 2022](https://www.youtube.com/watch?v=muOR1d8ULQo&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [Beginners Guide to C++'s Best Kept Secret -- std::algorithm - Mike Shah - C++ on Sea 2022](https://www.youtube.com/watch?v=muOR1d8ULQo)
 
-## [The Twin Algorithms - Conor Hoekstra - CppNorth 2022](https://www.youtube.com/watch?v=w37XnvIf6qE&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [The Twin Algorithms - Conor Hoekstra - CppNorth 2022](https://www.youtube.com/watch?v=w37XnvIf6qE)
 
-## [Better Algorithm Intuition - Conor Hoekstra - Meeting C++ 2019](https://www.youtube.com/watch?v=TSZzvo4htTQ&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [Better Algorithm Intuition - Conor Hoekstra - Meeting C++ 2019](https://www.youtube.com/watch?v=TSZzvo4htTQ)
 
-## [Algorithm Intuition - Conor Hoekstra - C++Now 2019](https://www.youtube.com/watch?v=48gV1SNm3WA&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [Algorithm Intuition - Conor Hoekstra - C++Now 2019](https://www.youtube.com/watch?v=48gV1SNm3WA)
 
-## [105 STL Algorithms in Less Than an Hour - Jonathan Boccara - CppCon 2018](https://www.youtube.com/watch?v=2olsGf6JIkU&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [105 STL Algorithms in Less Than an Hour - Jonathan Boccara - CppCon 2018](https://www.youtube.com/watch?v=2olsGf6JIkU)
 
-## [Fantastic Algorithms and Where To Find Them - Nicholas Ormrod - CppCon 2017](https://www.youtube.com/watch?v=YA-nB2wjVcI&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [Fantastic Algorithms and Where To Find Them - Nicholas Ormrod - CppCon 2017](https://www.youtube.com/watch?v=YA-nB2wjVcI)
 
 
 
