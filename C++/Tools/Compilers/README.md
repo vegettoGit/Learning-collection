@@ -1,3 +1,32 @@
+## [What's New in Compiler Explorer? - Matt Godbolt - C++ on Sea 2023](https://www.youtube.com/watch?v=O5sEug_iaf4)
+### Topics covered:
+* What? Why? When? How? Who?
+* The talk goes through a series of User Journeys.
+* Low latency trader user: 
+  * Sum Over an Array example.
+  * Diff View.
+  * History feature.
+  * Analysis, `llvm-mca`: Total Cycles, Iterations, Instructions, etc.
+  * Inlining: Link Time Optimization.
+  * IDE mode.
+  * Templates.
+* Online C++ Trainer user:
+  * Teaching.
+  * Compiler overrides: Target architecture, etc.
+  * Mouse over.
+  * Control Flow Graph.
+  * Execution.
+  * Include Libraries.
+  * Linking.
+  * Clang Tidy.
+  * Sonar.
+* User who writes code that pushes the boundaries of C++:
+  * AST.
+  * Compiler internals. LLVM pass viewer.
+  * Will it compile? Conformance view.
+* Software developer who writes emulators in his spare time (Matt Godbolt).
+  * Stack view, optimization view, GPU execution, Windows execution, etc.
+
 ## [What Happens After The Compiler in C++ (How Linking Works) - Anders Schau Knatten - C++ on Sea 2023](https://www.youtube.com/watch?v=h4s891KVN80)
 ### Topics covered:
 * A Simple Function.
