@@ -4,7 +4,7 @@
 * Game pilars: Campaign, Competitive, Cooperative and Custom Games.
 * SnowPlay for gameplay, simulation.
   * Custom solution to handle high unit counts.
-  * Main bottlenecks for going over 50 or 100 units are on the network side (having to replicate that much data (client server model)) and having fully functional actors running on the simulation.
+  * Main bottlenecks for going over 50 or 100 units are on the network side (having to replicate that much data - client server model) and having fully functional actors running on the simulation.
   * James Anhalt is the Chief Architect. He takes all the experience from Blizzard to support that many units, running all of their collisions and pathfinding. The target was 3 times the speed of Starcraft 2.
   * The objective is responsive gameplay.
   * The original Pathfinding target was to be at least as good as Starcraft 2. Refer to James Anhalt's Starcraft 2 GDC talk "Pathing". The lessons learnt are being put into Stormgate, now improving all nuances and edge cases.
@@ -26,7 +26,7 @@
   * Supports DLSS frame generation.
   * Using Unreal's Terrain Editor. As you are painting, we dynamically generate a pathing mesh for path finding (computed close to real time as you are painting).
   * We built a Compute Shader to handle the visual side of units in proximity to trees, without needing any physics calculations.
-* Mininum spec for the game looking good: Windows 10, 6 cores (1 for SnowPlay, the rest for UE5, the faster the CPU the more frames you can resimulate), 2.3 GHz for decent performance, 16 GB of RAM, GeForce GTX 1060.
+* Minimum spec for the game looking good: Windows 10, 6 cores (1 for SnowPlay, the rest for UE5, the faster the CPU the more frames you can resimulate), 2.3 GHz for decent performance, 16 GB of RAM, GeForce GTX 1060.
 
 
 
