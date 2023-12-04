@@ -1,3 +1,8 @@
+## [C++ and Safety - Timur Doumler - C++ on Sea 2023](https://www.youtube.com/watch?v=imtpoc9jtOE)
+### Topics covered:
+* Terminology.
+  * Safety, security, correctness.
+
 ## [Removing Needless Undefined Behavior for a Safer C++ - Alisdair Meredith - ACCU 2023](https://www.youtube.com/watch?v=iY7ft98nM2k)
 ### Addressing UB for a Safer C++.
 ### Topics covered:
