@@ -1,3 +1,28 @@
+## [Keynote: Safety in C++: All the Safeties! - Sean Parent - C++ on Sea 2023](https://www.youtube.com/watch?v=BaUv9sgLCPc)
+### Topics covered:
+* Sean's team at Adobe: Improve software development practices.
+* Why talk about Safety?
+* What is Memory Safety?
+* Safety in terms of Safety Properties.
+  * What are Safety Properties?
+  * Leslie Lamport definition.
+  * Example Safety Property for Self Driving Car.
+  * Example Liveness Property for Self Driving Car.
+* Safety of a Programming Language.
+  * Achieving Safety in a Language.
+  * What is a Memory Safe Language?
+  * Frame rule for Programming Languages.
+* What's the Problem?
+* Memory Safety in C++.
+  * Sanitizers can help, at a performance cost which usually rules them out for production code.
+  * If not used in production, combine sanitizers with fuzzers.
+  * Not safety properties hold in the presence of UB.
+* The Illusion of Safety.
+  * Safety is a tool for local reasoning.
+* Can C++ be Memory Safe?
+* Forward.
+  * A (New) Possible Future.
+
 ## [C++ and Safety - Timur Doumler - C++ on Sea 2023](https://www.youtube.com/watch?v=imtpoc9jtOE)
 ### Topics covered:
 * Terminology.
