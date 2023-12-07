@@ -1,3 +1,52 @@
+## [Simulating Tropical Weather in 'Far Cry 6' - Emily Zhou (Ubisoft Montreal) & Colin Weick (Ubisoft Toronto) - GDC 2022](https://www.youtube.com/watch?v=mGHCOOnI5aE)
+### Topics include: 
+* Intro to Far Cry 6.
+* Inspiration.
+  * Tropical Weather References.
+* Core controls of the weather system.
+  * Goals: Weather states, dynamic weather, natural transitions, efficient.
+  * Weather Manager.
+  * Weather Presets: Few Clouds, Broken Clouds, Mist, Heavy Fog, Light Rain, Moderate Rain, Heavy Rain, Thunderstorm.
+  * Weather Forecast.
+  * Regional weather.
+  * Weather at Runtime. Weather State Flow.
+* Material wetness.
+  * Tech art driven.
+  * Wetness Type (Static, Dynamic).
+  * Static Wetness: Wetness Shadow Map. Store the wetness shadow in the deferred shadow pass. Porosity.
+  * Dynamic Wetness: Wetness Component. Characters, weapons, vehicles. Perform a raycast every few frames to check if exposed to rain.
+* Rendering features.
+  * Atmospheric Scattering, Volumetric Clouds, Volumetric Fog, Reflections and Cubemaps, Rain and Lighting.
+* Lighting.
+  * Physically based.
+  * Multi-scattering diffuse and specular BRDFs.
+  * Translucency.
+* Global Illumination.
+  * Light probes.
+  * GI Data: 13 packed frames.
+* Sky Lighting: Atmospheric Scattering.
+  * Humidy, Turbidity.
+* Volumetric clouds.
+  * Lighting Model Recap. Extinction, Single Scattering, Multiscattering, Phase function.
+  * Generated Noise Data. Base Noise, Detail Noise, Weather Map, Curl Noise.
+  * Cirrus Cloud Data.
+  * Raymarching.
+  * Runtime Textures. Checkerboard Rendering and Encoding.
+  * Projected Cloud Shadows.
+* Volumetric Fog.
+  * Frustum Aligned Volume, Temporal filtering, Sum Cells, Blur Summed, Exponential Blurred Shadows.
+* Reflections.
+* Cubemaps: Needed fallback for when SSLR is not viable.
+  * Cubemaps Relighting.
+* Rain (GPU Particles).
+  * GPU Particle System, GPU Particle Sorting (Bitonic Sort).
+  * Particle FX: Streaks, Splashes, Lightning. 
+  * Rain Shadow Map.
+  * Rain Particle Lighting.
+  * Ocean (iSUBD Tessellation). Wave Simulations.
+* Tree Bending.
+* Conclusion.
+
 ## [Static vs. Dynamic Lighting - Natalia Torres - Unreal Fest 2022](https://www.youtube.com/watch?v=gqKka4dAyJQ)
 ### Topics include: 
 #### Tips for better Static Lightning quality:
