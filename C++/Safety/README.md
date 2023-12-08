@@ -1,3 +1,12 @@
+## [Safety-First: How To Develop C++ Safety-Critical Software - Andreas Weis - CppNow 2023](https://www.youtube.com/watch?v=mUFRDsgjBrE)
+### Topics covered:
+* Motivation.
+  * The Pragmatic Programmer, The Software Craftsman.
+* What is safety?
+* What are the regulations around functional safety.
+* A tour of an ISO safety standard for software.
+* Using C++ in a safety-critical environment.
+
 ## [Keynote: Safety in C++: All the Safeties! - Sean Parent - C++ on Sea 2023](https://www.youtube.com/watch?v=BaUv9sgLCPc)
 ### Topics covered:
 * Sean's team at Adobe: Improve software development practices.
