@@ -10,10 +10,10 @@
   * It took a long time to acquire Osaka server assets from Tokyo. The problem was solved by preparing a mirror server.
   * In 2018, started providing support for external partner companies (game development and assets outsourcing).
   * The number of titles adopted steadily increased, but the COVID pandemic began to affect engine development in early 2020. Shifted to online communication.
-  * As of 2023, we support more than 20 projects simultaneouly (not all of them are part of game development).
+  * As of 2023, we support more than 20 projects simultaneously (not all of them are part of game development).
   * 20 developers in 2014, about 150 in 2023. From single floor to multiple locations.
 * RE ENGINE Development Structure.
-  * Each are of specialization is called a "unit": AI, CI, DCC, Editor, Effects, GUI, Motion, Network, Physics, Rendering, Runtime, Security, Sound, Timeline, Tool.
+  * Each area of specialization is called a "unit": AI, CI, DCC, Editor, Effects, GUI, Motion, Network, Physics, Rendering, Runtime, Security, Sound, Timeline, Tool.
   * Each unit has a flat structure with no hierarchical relationship.
   * Management is a different type of unit. Acts as a "jack-of-all-trades" to solve any problems that may arise for engine units or game developers.
   * AI: Navigation, FSM and BehaviorTree.
@@ -30,7 +30,7 @@
   * Security: Develops anti-cheating and anti-piracy systems for PC games, DLC and other content. They also develop crash reporting tools to collect and investigate information when crashes occur in user environments.
   * Sound: Develops in-house sound engines for game sounds, audio middleware and editors for sound effects.
   * Timeline: Develops key animation functions, mainly for use in cutscenes.
-  * Tool: Develops the UI for RE Engine as a whole as well as UI parts used in the editor created by each unit. Provides a mechanism for tool development (Python based) for game developers. Develops version control systems for assets.
+  * Tool: Develops the UI for RE ENGINE as a whole as well as UI parts used in the editor created by each unit. Provides a mechanism for tool development (Python based) for game developers. Develops version control systems for assets.
 * Role of the Management Unit.
   * Ensure engine and game developers can develop without delays and holdups.
   * "Inbox" for queries.
@@ -51,12 +51,12 @@
   * Build checks performed with GitLab's Pipeline function.
   * "Experimental" checking engine version.
   * Automatic Check: The game is played from start to finish and checked for crashes and game progression problems.
-  * Manual checks performed with the help of the QA team for non-crash problems such a visual defects.
+  * Manual checks performed with the help of the QA team for non-crash problems such as visual defects.
   * RE ENGINE policy: All past titles must run on the latest engine to ensure compatibility.
   * LegacyFlag to switch between behaviors. For example, it can be on for released titles and off for titles under development.
   * CI builds are performed every day in the evening.
   * When working on a feature, the engine code is integrated into a single branch. We provide an engine for each title.
   * RE ENGINE's functionality is divided into modules. We can set which modules are used for which title.
-  * Master branch vs title branch.
+  * Master branch vs Title branch.
 * Final Thoughts.
 
