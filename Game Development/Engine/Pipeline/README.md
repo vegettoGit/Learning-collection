@@ -1,5 +1,5 @@
-# [Fast Iteration for Far Cry 4 - Optimizing Key Parts of the Dunia Pipeline - Remi Quenin - GDC 2015](https://www.youtube.com/watch?v=AhmlFG1u1wE)
-## Topics include:
+## [Fast Iteration for Far Cry 4 - Optimizing Key Parts of the Dunia Pipeline - Remi Quenin - GDC 2015](https://www.youtube.com/watch?v=AhmlFG1u1wE)
+### Topics include:
 * Description of Far Cry 3's engine (Dunia) pipeline.
   * Compressing art assets into a binary package, etc.
 * FC4's Compiling time Optimization.
