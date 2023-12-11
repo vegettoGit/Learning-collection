@@ -1,3 +1,25 @@
+## [RE:2023 RE ENGINE's Past and Future - Tomofumi Ishida - CAPCOM Open Conference RE:2023](https://www.youtube.com/watch?v=ibv9319dIQA)
+### Topics covered:
+* RE ENGINE's Past.
+  * What is RE ENGINE?
+* RE ENGINE Titles.
+* RE ENGINE Supported Platforms.
+* Features of RE ENGINE.
+  * High Performance and Stability.
+  * High Development Efficiency.
+  * Modular Design: Rendering, motion, etc.
+  * Backwards Compatibility.
+* RE ENGINE's Present.
+* Improved Efficiency of Engine Management Systems.
+  * Introduction and Visibility of RELauncher.
+  * Ensure Engine Stability and Compatibility: Introduction of REQA, Engine Distribution Flow (Master/Release Git branches).
+  * Reduction of Defect Investigation Costs: Steps to start investigating defects, Introduction of High-end PCs, Device Farm Implementation, Introduction of Cloud Saving for Development, Introduction of a Package Manager, Introducing the REProfiler.
+  * Responding to Inquiries and Managing Issues: Utilizing Microsoft Teams, Title QA, Introducing TeamsView.
+* RE ENGINE's Future.
+  * RE ENGINE challenges (expansion and diversification of project scale, used by overseas team members, increase in new graduates with commercial engine experience).
+  * Go beyond the boundaries of in-house engines.
+  * REX: RE neXt ENGINE.
+
 ## [RE ENGINE Philosophy - Daisuke Sanekane - CAPCOM Open Conference RE:2023](https://www.youtube.com/watch?v=mqEMFJHUn3g)
 ### Topics covered:
 * History of RE ENGINE.
