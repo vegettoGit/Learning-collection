@@ -1,4 +1,4 @@
-## [RE:2023 RE ENGINE's Past and Future - Tomofumi Ishida - CAPCOM Open Conference RE:2023](https://www.youtube.com/watch?v=ibv9319dIQA)
+## [RE ENGINE's Past and Future - Tomofumi Ishida - CAPCOM Open Conference RE:2023](https://www.youtube.com/watch?v=ibv9319dIQA)
 ### Topics covered:
 * RE ENGINE's Past.
   * What is RE ENGINE?
