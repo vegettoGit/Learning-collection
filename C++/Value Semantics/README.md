@@ -1,4 +1,27 @@
-## [Back to Basics: Cpp Value Semantics - Klaus Iglberger - CppCon 2022](https://www.youtube.com/watch?v=G9MxNwUoSt0&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [Value Oriented Programming Part 1: You Say You Want to Write a Function - Tony Van Eerd - CppNow 2023](https://www.youtube.com/watch?v=b4p_tcLYDV0)
+### Topics covered:
+* Functions are answers to questions.
+* Write the functions you want to see in the world.
+* Code top-down on the way down, and bottom-up on the way back up.
+* KYSS: Keep Your Stuff Separate.
+* Value Oriented Programming Part 1: Functions.
+  * Testability! Safety!
+  * Takes input, modifies it, produces output.
+  * Takes input, produces output.
+  * Separate calculating from doing. 
+  * Returning `void` is a code smell.
+  * "Pure" functions: Same input gives same output, no side effects.
+  * Local reasoning.
+  * Functions are the fundamental building block of programming.
+  * Functions are for sharing.
+  * Invariants. Not everything should be a member function.
+  * In Out parameters.
+  * Function names.
+  * No raw loops.
+  * Pure functions are thread safe.
+  * Details change, Abstractions remain.
+
+## [Back to Basics: Cpp Value Semantics - Klaus Iglberger - CppCon 2022](https://www.youtube.com/watch?v=G9MxNwUoSt0)
 ### Topics covered:
 * The Source of Classic OO Design Patterns.
   * Design Patterns: Elements of Reusable Object-Oriented Software.
@@ -28,7 +51,7 @@
   * `std::function` (C++11) is a value type. Comparison with the Command Design Pattern.
   * `std::any` (C++17) is a value type.
 
-## [Value Semantics: Safety, Independence, Projection, & Future of Programming - Dave Abrahams - CppCon 22](https://www.youtube.com/watch?v=QthAU-t3PQ4&list=LL6MKUgGZ9Q8c2Ff7GnoRoqA)
+## [Value Semantics: Safety, Independence, Projection, & Future of Programming - Dave Abrahams - CppCon 22](https://www.youtube.com/watch?v=QthAU-t3PQ4)
 ### Topics covered:
 * Global variables cause problems.
   * The same issues apply to Pointers and References.
