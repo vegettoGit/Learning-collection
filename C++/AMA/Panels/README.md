@@ -1,3 +1,14 @@
+## [Coding for Safety, Security, and Sustainability in C++ - Panel Discussion - CppNow 2023](https://www.youtube.com/watch?v=jFi5cILjbA4)
+### Panelists:
+* JF Bastien, Chandler Carruth, Daisy Hollman, Lisa Lippincott, Sean Parent and Herb Sutter.
+### Moderator: 
+* Bob Steagall.
+### Topics covered:
+* What does Safety mean in the context of C++?
+* Distinction between Security and Safety.
+* What differences do you see between the many possible successors of C++?
+* Safety and adoption of Open Source in the industry.
+
 ## [C++ And Beyond: Discussion - Vittorio Romeo, Kevlin Henney, Nico Josuttis & Kate Gregory - ACCU 2023](https://www.youtube.com/watch?v=_AmjHjYUx6c)
 ### Panelists:
 * Vittorio Romeo, Kevlin Henney, Nicolai Josuttis, Kate Gregory.
@@ -19,7 +30,7 @@
 ### Panelists:
 * Bjarne Stroustrup, Daisy Hollman, Daniela Engert, David Sankel, Inbal Levi, Michael Wong, Nina Ranns, Pablo Halpern, Timur Doumler.
 ### Moderator: 
-* Herb Sutter
+* Herb Sutter.
 ### Topics covered:
 * Bjarne: Balancing stability, flexibility and evolution is hard.
 * What can we learn from other languages? 
